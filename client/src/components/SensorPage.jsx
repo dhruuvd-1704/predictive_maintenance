@@ -21,7 +21,7 @@ const SensorPage = ({ setPredictionData }) => {
 
   const handlePredict = async () => {
     try {
-      const resp = await fetch('http://localhost:5000/predict', {
+      const resp = await fetch('https://predictive-maintenance-pied.vercel.app/predict', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
